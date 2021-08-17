@@ -33,7 +33,7 @@ new class App {
                 this.sidebarContainer.removeChild(this.chatIframe);
             }
             if(this.inputWindowContainer) {
-                this.sidebarContainer.removeChild(this.inputWindow);
+                this.sidebarContainer.removeChild(this.inputWindowContainer);
             }
             this.initialize();
         });
