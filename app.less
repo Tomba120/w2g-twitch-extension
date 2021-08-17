@@ -1,0 +1,161 @@
+html {
+    body {
+        background: #1f1f23;
+
+        .streamIframe, .chatIframe {
+            pointer-events: unset !important;
+            border: 0;
+        }
+
+        .streamIframe {
+            height: 250px;
+        }
+
+        .inputWindowContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .inputWindow {
+                width: 80%;
+            }
+
+            .inputText {
+                margin-bottom: 10px;
+            }
+
+            .inputElement {
+                width: 100%;
+                padding: 10px;
+                background: #1f1f23;
+                color: #c5c5c6;
+                border: 2px solid #1f1f23;
+                border-radius: .28571429rem;
+                margin-bottom: 20px;
+
+                &.danger {
+                    border-color: #ff0000;
+                }
+
+                &:focus {
+                    border-color:  #9147ff;
+                    outline: none;
+                }
+            }
+        }
+
+        .inputButton, .dropdownButton {
+            width: 100%;
+            padding: 10px;
+            background: #9147ff;
+            color: #ffffff;
+            border: none;
+            font-weight: bold;
+            border-radius: 0.285714rem;
+
+            &:hover {
+                background: #a66bff;
+            }
+        }
+
+        .w2g-timeslider {
+            background: #0e0e10;
+        }
+
+        .w2g-timeslider-fill {
+            background: #9147ff;
+
+            svg > circle {
+                fill: #9147ff;
+            }
+        }
+
+        .w2g-topbar-logo {
+            filter: grayscale(1);
+        }
+
+        .ui.primary.button, .ui.primary.buttons .button {
+            background: #9147ff;
+
+            &:hover {
+                background-color: #a66bff;
+            }
+        }
+
+        .w2g-topbar, .w2g-main-right {
+            background: #0e0e10;
+            color: #c5c5c6;
+        }
+
+        #search-bar-input, .w2g-invite .action.input input, .ui.icon button, .w2g-active-icon {
+            background-color: #1f1f23;
+            color: #c5c5c6;
+        }
+
+        .w2g-color-wrapper {
+            min-height: unset;
+            height: 100%;
+            padding-bottom: 0;
+        }
+
+        .w2g-player-search {
+            margin-top: 0;
+            max-width: unset;
+        }
+
+        .w2g-main-lower {
+            padding: 0;
+        }
+
+        .w2g-main-right {
+            padding-top: 0;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        .w2g-scroll-vertical {
+            overflow: hidden !important;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .w2g-player-container {
+            height: 100%;
+            margin-bottom: 0;
+        }
+
+        .w2g-player-video {
+            height: 100%;
+        }
+
+        .w2g-video-container {
+            height: 100%;
+            max-height: calc(100% - 38px);
+        }
+
+        .w2g-content-right {
+            padding: 0;
+        }
+
+        .w2g-main-right {
+            max-width: 340px;
+        }
+
+        #userbar,
+        #w2g-sidebar-menu,
+        .w2g-panel-menu,
+        .w2g-sidebar-menu,
+        .playlist-menu.mod-pl,
+        .w2g-playlists-settings.mod-pl,
+        .w2g-search-results.w2g-until-mobile,
+        .w2g-center-plus.w2g-until-mobile,
+        .w2g-search-spacer.w2g-until-mobile,
+        .w2g-list-items.w2g-items.w2g-scroll-vertical {
+            display: none !important;
+        }
+    }
+}
