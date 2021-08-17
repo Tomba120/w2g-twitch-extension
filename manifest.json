@@ -1,5 +1,5 @@
 {
-    "name": "Watch2Gether Twitch Extension",
+    "name": "Watch2Gether Twitch",
     "description": "Enhances W2G with embed twitch stream/chat and darkmode.",
     "version": "1.0",
     "manifest_version": 3,
