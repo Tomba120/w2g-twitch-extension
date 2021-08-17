@@ -9,7 +9,7 @@ new class App {
     }
 
     initialize() {
-        if(this.forceReset || this.channelName == null)
+        if(this.channelName == null)
             return this.createInputWindow();
         this.createEmbedStream();
         this.createEmbedChat();
@@ -31,6 +31,9 @@ new class App {
             if(this.streamIframe && this.chatIframe) {
                 this.sidebarContainer.removeChild(this.streamIframe);
                 this.sidebarContainer.removeChild(this.chatIframe);
+            }
+            if(this.inputWindowContainer) {
+                this.sidebarContainer.removeChild(this.inputWindow);
             }
             this.initialize();
         });
@@ -67,7 +70,7 @@ new class App {
             if(this.inputElement.value.length > 0) {
                 window.localStorage.setItem(this.getRoomName(), this.inputElement.value);
                 this.channelName = this.getChannelName();
-                this.inputWindowContainer.parentElement.removeChild(this.inputWindowContainer);
+                this.sidebarContainer.removeChild(this.inputWindowContainer);
                 this.initialize();
                 return;
             }
