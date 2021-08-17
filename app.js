@@ -29,11 +29,11 @@ new class App {
             window.localStorage.removeItem(this.getRoomName());
             this.channelName = this.getChannelName();
             if(this.streamIframe && this.chatIframe) {
-                this.sidebarContainer.removeChild(this.streamIframe);
-                this.sidebarContainer.removeChild(this.chatIframe);
+                this.streamIframe.remove();
+                this.chatIframe.remove();
             }
             if(this.inputWindowContainer) {
-                this.sidebarContainer.removeChild(this.inputWindowContainer);
+                this.inputWindowContainer.remove();
             }
             this.initialize();
         });
@@ -70,7 +70,7 @@ new class App {
             if(this.inputElement.value.length > 0) {
                 window.localStorage.setItem(this.getRoomName(), this.inputElement.value);
                 this.channelName = this.getChannelName();
-                this.sidebarContainer.removeChild(this.inputWindowContainer);
+                this.inputWindowContainer.remove();
                 this.initialize();
                 return;
             }
