@@ -136,6 +136,40 @@ html {
             margin-bottom: 0;
         }
 
+        .w2g-popup {
+            &::after {
+                color: #ffffff;
+                background-color: #9147ff;
+            }
+
+            &::before {
+                background-color: #9147ff;
+            }
+        }
+
+        .w2g-app-icons {
+            color: #c5c5c6;
+            background-color: #1f1f23;
+            border: 1px solid #32323c;
+            border-right: 0px;
+            border-left: 0px;
+        }
+
+        .w2g-selectable-active {
+            border: 1px solid #32323c;
+            border-top: 5px solid #9147ff !important;
+        }
+
+        .w2g-dropdown-header {
+            color: #bf94ff;
+        }
+
+        .player_controls {
+            input[type="range"] {
+                accent-color: #9147ff;
+            }
+        }
+
         .w2g-player-video {
             height: 100%;
         }
@@ -159,6 +193,8 @@ html {
 
         #userbar,
         #w2g-sidebar-menu,
+        #w2g-square-ad,
+        .w2g-app-active,
         .w2g-square-ad,
         .w2g-panel-menu,
         .w2g-sidebar-menu,
@@ -167,7 +203,8 @@ html {
         .w2g-search-results.w2g-until-mobile,
         .w2g-center-plus.w2g-until-mobile,
         .w2g-search-spacer.w2g-until-mobile,
-        .w2g-list-items.w2g-items.w2g-scroll-vertical {
+        .w2g-list-items.w2g-items.w2g-scroll-vertical,
+        .w2g-feedback-container {
             display: none !important;
         }
     }
