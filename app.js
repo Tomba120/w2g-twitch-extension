@@ -17,7 +17,7 @@ new class App {
 
     createDropdownButton() {
         this.dropdownButton = document.createElement("button");
-        this.dropdownButton.classList.add("dropdownButton");
+        this.dropdownButton.classList.add("dropdownButton", "mt-2");
         this.dropdownButton.textContent = "Reset twitch channel";
 
         this.dropdownContainer.appendChild(this.dropdownButton);
