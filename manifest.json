@@ -1,7 +1,7 @@
 {
     "name": "Watch2Gether Twitch",
     "description": "Enhances W2G with embed twitch stream/chat and darkmode.",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "manifest_version": 3,
     "content_scripts": [{
         "matches": ["https://w2g.tv/*/room/*", "https://w2g.tv/*/room*"],
