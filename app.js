@@ -1,6 +1,6 @@
 new class App {
     constructor() {
-        this.sidebarContainer = document.querySelector(".w2g-menu-tab.w2g-playlists.w2g-active");
+        this.sidebarContainer = document.querySelector(".w2g-menu-tab.w2g-playlists");
         this.dropdownContainer = document.querySelector(".w2g-dropdown.w2g-down-right.w2g-users");
         this.channelName = this.getChannelName();
         this.remoteHost = "w2g.tv";
